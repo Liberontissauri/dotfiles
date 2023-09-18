@@ -1,0 +1,51 @@
+
+# SXHKD config
+
+
+# Terminal
+super + Return
+	alacritty
+
+# Open application menu
+super + space
+    sh $HOME/.config/rofi/launcher
+
+# Close App
+alt + {_,shift} + q
+	bspc node -{c,k}
+
+# Reload Keybindings
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# Quit/Restart bspwm
+ctrl + shift + {q,r}
+	bspc {quit,wm -r}
+
+# Split horizontal, vertical or cancel
+super + {h,v,q}
+	bspc node -p {east,south,cancel}
+
+# Toggle beetwen floating & tiled
+super + f
+    bspc node -t "~"{floating,tiled}
+
+# Focus Workspace
+super + {1-8}
+	bspc desktop -f '^{1-8}'
+
+# Send focused window to another workspace
+super + shift + {1-8}
+	bspc node -d '^{1-8}'
+
+super + {Left,Right,Up,Down}
+	bspc node -f {west,east,north,south}
+
+super + alt + {Left,Right,Up,Down}
+        bspc node -v {-50 0,50 0,0 -50,0 50}
+
+super + shift + {Left,Right,Up,Down}
+	bspc node -z bottom_right {-50 0,50 0,0 -50,0 50} 
+
+super + Tab
+	bspc node -s last
