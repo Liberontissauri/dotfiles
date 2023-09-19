@@ -2,6 +2,7 @@
 
 # Themes:
 # - Sakura Blossom (sakura-blossom)
+# - Sakura Blossom Laptop (sakura-blossom-laptop)
 theme="sakura-blossom"
 
 for folder in $(ls ./${theme}) ; do
