@@ -30,6 +30,9 @@ super + {h,v,q}
 super + f
     bspc node -t "~"{floating,tiled}
 
+super + m
+    bspc node -t "~"{fullscreen,tiled}
+
 # Focus Workspace
 super + {1-8}
 	bspc desktop -f '^{1-8}'
