@@ -52,3 +52,6 @@ super + shift + {Left,Right,Up,Down}
 
 super + Tab
 	bspc node -s last
+
+super + shift + s
+	escrotum -s -C # Screenshot
