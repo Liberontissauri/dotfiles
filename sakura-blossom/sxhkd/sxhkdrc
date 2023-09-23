@@ -35,7 +35,7 @@ super + m
 
 # Focus Workspace
 super + {1-8}
-	bspc desktop -f '^{1-8}'
+	bspc desktop -f '^{1-9}'
 
 # Send focused window to another workspace
 super + shift + {1-8}
