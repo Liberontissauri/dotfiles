@@ -1,0 +1,47 @@
+{
+	"layer": "top",
+	"modules-left": ["custom/media", "pulseaudio"],
+	"modules-center": ["hyprland/workspaces"],
+	"modules-right": ["custom/updates", "clock"],
+	
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-muted": "{icon} {volume}%",
+		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"format-icons": {
+			"default": ["", "", ""]
+		}
+	},
+    "hyprland/workspaces": {
+        "format":"{icon}",
+        "format-icons": {
+            "default": "",
+            "active": ""
+
+        }
+    },
+    "clock": {
+        "format": "{:%H:%M} "
+    },
+    "custom/media": {
+        "format": "{icon} {}",
+        "exec": "~/.config/waybar/spotify_scripts/scroll_spotify_status.sh",
+        "format-icons": {
+            "spotify": " ",
+            "default": " "
+        },
+        "on-click": "playerctl play-pause"
+    },
+    "custom/updates":{
+        "format": "{} ",
+        "exec": "checkupdates | wc -l",
+        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
+        "interval": 15,
+        "on-click": "alacritty -e paru -Syu && notify-send 'The system has been updated' "
+    },
+    "custom/reminder": {
+        "format": "VAI ESTUDAR FDS "
+    }
+}

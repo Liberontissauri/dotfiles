@@ -1,0 +1,35 @@
+(defwindow powerprompt
+    :monitor 0
+    :geometry (geometry :x "0px"
+                        :y "0px"
+                        :width "32%"
+                        :height "20%"
+                        :anchor "center")
+    :stacking "overlay"
+    :exclusive true
+    (button_layout)
+ )
+
+(defwidget button_layout[]
+    (box
+    :class "power-bg"
+    :spacing 30
+    
+    (button
+    :class "powerbtn"
+    :onclick "$HOME/.config/eww/scripts/shutdown.sh"
+    "")
+    (button
+    :class "rebootbtn"
+    :onclick "$HOME/.config/eww/scripts/reboot.sh"
+    "")
+    (button
+    :class "logoutbtn"
+    :onclick "$HOME/.config/eww/scripts/logout.sh"
+    "")
+    (button
+    :class "lockbtn"
+    :onclick "$HOME/.config/eww/scripts/lock.sh"
+    "")
+    )
+)
