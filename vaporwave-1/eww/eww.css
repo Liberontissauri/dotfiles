@@ -1,0 +1,50 @@
+
+.powerprompt{
+    background-color: rgba(255, 255, 255, 0.89);
+}
+
+.power-bg {
+    background-color: rgba(255, 255, 255, 0);
+    margin: 65px 35px;
+    padding: 0 30px;
+}
+.power-bg button {
+    font-family: "JetbrainsMono Nerd Font";
+    font-size: 40px;
+    border: none;
+}
+.power-bg button:hover {
+    font-family: "JetbrainsMono Nerd Font";
+    background-color: rgba(255, 255, 255, 0.589);
+    font-size: 40px;
+    border: none;
+}
+
+.powerbtn {
+    color: white;
+    background-color: #f88bae;
+}
+.powerbtn:hover {
+    color: #f88bae;
+}
+.rebootbtn {
+    color: white;
+    background-color: #f4ad8f;
+}
+.rebootbtn:hover {
+    color: #f4ad8f;
+}
+.logoutbtn {
+    color: white;
+    background-color: #93c383;
+}
+.logoutbtn:hover {
+    color: #93c383;
+}
+.lockbtn {
+    color: white;
+    background-color: #6bd8d8;
+}
+.lockbtn:hover {
+    color: #6bd8d8;
+}

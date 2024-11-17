@@ -1,0 +1,27 @@
+general.import = ["/home/libeontissauri/.config/alacritty/colors.yml", "/home/libeontissauri/.config/alacritty/fonts.toml"]
+general.live_config_reload = true
+
+[cursor]
+unfocused_hollow = false
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[env]
+TERM = "alacritty"
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+decorations = "full"
+dynamic_title = true
+opacity = 0.7
+startup_mode = "Windowed"
+
+[window.dimensions]
+columns = 82
+lines = 24
+
+[window.padding]
+x = 10
+y = 10

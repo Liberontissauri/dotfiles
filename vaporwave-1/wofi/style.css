@@ -1,0 +1,38 @@
+window {
+    margin: 0px;
+    border: 1px solid #12c9f7;
+    background-color: #ffffff;
+    font-family: Cousine Nerd Font;
+    }
+    
+    #input {
+    margin: 5px;
+    border: none;
+    color: #646a6e;
+    background-color: #fff;
+    }
+    #input:selected {
+        border: none;
+    }
+    
+    #inner-box {
+    margin: 5px;
+    border: none;
+    background-color: #ffffff;
+    }
+    
+    #outer-box {
+    margin: 5px;
+    border: none;
+    background-color: #ffffff;
+    }
+    
+    #text {
+    margin: 5px;
+    border: none;
+    color: #646a6e;
+    } 
+    
+    #entry:selected {
+    background-color: #12c9f7;
+    }
